@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Account - SCE Classroom</title>
+    <link rel="stylesheet" href="Dsingin.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Create Account</h1>
+
+    
+    <div class="profile">
+        <label for="fileInput" class="circle">
+            Upload Photo
+        </label>
+        <input type="file" id="fileInput" accept="image/*" hidden>
+    </div>
+
+    <form>
+
+        <input type="text" placeholder="Full Name" required>
+
+        <input type="text" placeholder="Username" required>
+
+        <input type="email" placeholder="Email Address" required>
+
+        <input type="tel" placeholder="Phone Number (Optional)">
+
+        <select required>
+            <option value="">Select Role</option>
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+        </select>
+
+        <input type="password" placeholder="Password" required>
+
+        <input type="password" placeholder="Confirm Password" required>
+
+        <button type="submit" class="signup-btn">
+            Create Account
+        </button>
+
+        <button type="button" class="google">
+           <img src="Go.png" id="Go"> <a>Continue with Google</a>
+        </button>
+
+        <p>
+            Already have an account?
+            <a href="#">Login</a>
+        </p>
+
+    </form>
+
+</div>
+
+</body>
+</html>
