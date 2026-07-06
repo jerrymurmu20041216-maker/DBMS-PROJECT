@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Course | Mini Classroom</title>
+
+    <link rel="stylesheet" href="createCourse.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>Create New Course</h1>
+            <a href="tdashboard.html" class="back-btn">
+                ← Back to Dashboard
+            </a>
+        </div>
+
+        <div class="course-form">
+
+            <form id="courseForm">
+
+                <label>Course Name</label>
+                <input
+                    type="text"
+                    id="courseName"
+                    placeholder="e.g. Database Management System"
+                    required
+                >
+
+                <label>Course Code</label>
+                <input
+                    type="text"
+                    id="courseCode"
+                    placeholder="e.g. CSE-2203"
+                    required
+                >
+
+                <label>Department</label>
+                <input
+                    type="text"
+                    id="department"
+                    placeholder="e.g. Computer Science & Engineering"
+                    required
+                >
+
+                <label>Semester</label>
+                <select id="semester" required>
+                    <option value="">Select Semester</option>
+                    <option>1st Semester</option>
+                    <option>2nd Semester</option>
+                    <option>3rd Semester</option>
+                    <option>4th Semester</option>
+                    <option>5th Semester</option>
+                    <option>6th Semester</option>
+                    <option>7th Semester</option>
+                    <option>8th Semester</option>
+                </select>
+
+                <label>Description</label>
+                <textarea
+                    id="description"
+                    rows="5"
+                    placeholder="Write a short description about this course..."
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Create Course
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="createCourse.js"></script>
+
+</body>
+</html>
